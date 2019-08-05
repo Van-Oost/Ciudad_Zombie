@@ -1,0 +1,21 @@
+body {
+  background-image: url('../imagenes/fondo.png');
+}
+
+canvas {
+  margin: auto;
+  display: flex;
+  margin-top: calc(50vh - 286px);
+}
+
+.boton-recargar {
+  margin: auto;
+  display: flex;
+  background: none;
+  border: none;
+  color: yellow;
+  font-family: monospace;
+  visibility: hidden;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
