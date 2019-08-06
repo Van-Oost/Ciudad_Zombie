@@ -28,7 +28,7 @@ ZombieCaminante.prototype.mover = function() {
   velocidad lo que estamos haciendo es invertir su direccion.*/
   if ((this.x < this.rangoMov.desdeX) || (this.x > this.rangoMov.hastaX)){
     this.velocidad *= -1;
-    //cambiarDireccion.call(this);
+    cambiarDireccion.call(this);
   }
   // Si sobrepasa el rangoY, lo manda al centro entre ambos rangos
   if ((this.y < this.rangoMov.desdeY) || (this.y > this.rangoMov.hastaY)) {
@@ -36,22 +36,22 @@ ZombieCaminante.prototype.mover = function() {
   }
 }
 
-/*function cambiarDireccion(){
-  if (this.sprite="imagenes/zombie1.png"){
-    this.sprite = "imagenes/zombie1-1.png";
-  } else if (this.sprite="imagenes/zombie11.png"){
+function cambiarDireccion(){
+  if (this.sprite=="imagenes/zombie1.png"){
+    this.sprite = "imagenes/zombie11.png";
+  } else if (this.sprite=="imagenes/zombie11.png"){
     this.sprite = "imagenes/zombie1.png";
-  } else if (this.sprite="imagenes/zombie2.png"){
-    this.sprite = "imagenes/zombie2-2.png";
-  } else if (this.sprite="imagenes/zombie22.png"){
+  } else if (this.sprite=="imagenes/zombie2.png"){
+    this.sprite = "imagenes/zombie22.png";
+  } else if (this.sprite=="imagenes/zombie22.png"){
     this.sprite = "imagenes/zombie2.png";
-  } else if (this.sprite="imagenes/zombie3.png"){
-    this.sprite = "imagenes/zombie3-3.png";
-  } else if (this.sprite="imagenes/zombie33.png"){
+  } else if (this.sprite=="imagenes/zombie3.png"){
+    this.sprite = "imagenes/zombie33.png";
+  } else if (this.sprite=="imagenes/zombie33.png"){
     this.sprite = "imagenes/zombie3.png";
-  } else if (this.sprite="imagenes/zombie4.png"){
-    this.sprite = "imagenes/zombie4-4.png";
-  } else if (this.sprite="imagenes/zombie44.png"){
+  } else if (this.sprite=="imagenes/zombie4.png"){
+    this.sprite = "imagenes/zombie44.png";
+  } else if (this.sprite=="imagenes/zombie44.png"){
     this.sprite = "imagenes/zombie4.png";
 };
-}*/
+}
