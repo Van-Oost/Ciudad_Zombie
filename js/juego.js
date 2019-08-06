@@ -247,8 +247,7 @@ Juego.calcularAtaques = function() {
     if (this.intersecan(enemigo, this.jugador, this.jugador.x, this.jugador.y)) {
       enemigo.comenzarAtaque.call(enemigo, this.jugador);
     } else {
-      /* Sino, debe dejar de atacar
-      COMPLETAR */
+      enemigo.dejarDeAtacar.call(enemigo);
     }
   }, this);
 };

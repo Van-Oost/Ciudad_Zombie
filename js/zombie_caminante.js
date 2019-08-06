@@ -35,7 +35,7 @@ ZombieCaminante.prototype.mover = function() {
     this.y = this.rangoMov.desdeY + (this.rangoMov.hastaY - this.rangoMov.desdeY)/2;
   }
 }
-
+// Agregue que cuando un zombie caminante cambie de direccion de movimiento, tambien se cambie su sprite 
 function cambiarDireccion(){
   if (this.sprite=="imagenes/zombie1.png"){
     this.sprite = "imagenes/zombie11.png";
